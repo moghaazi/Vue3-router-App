@@ -1,0 +1,75 @@
+// --------------------------- Global --------------------------------------
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.container,
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+}
+
+// Custom Scroll Bar
+// For Firefox
+:root {
+  scrollbar-color: #666 #222 !important;
+  scrollbar-width: thin !important;
+}
+
+::-webkit-scrollbar {
+  width: 1.1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #222;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to right bottom, #14abe6, #0eb1f1);
+  border-radius: 5rem;
+}
+
+body {
+  padding-top: 5rem;
+  background-color: #121212;
+  color: #fff;
+  font: 1rem monospace;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
